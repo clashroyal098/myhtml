@@ -1,0 +1,10 @@
+.App{
+  padding:100px;
+}
+ul{
+  list-style-type: none;
+  font-size:20px;
+}
+.Address{
+  border-bottom: solid 3px black;
+}
