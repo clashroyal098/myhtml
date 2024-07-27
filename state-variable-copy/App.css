@@ -1,0 +1,32 @@
+.main{
+  height:100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  width:100px;
+  height:30px;
+  border-radius: 20px;
+}
+button:last-child:hover {
+  background-color: cyan;
+  color:rgb(118, 197, 0);
+}
+button:first-child:hover {
+  background-color: red;
+  color:rgba(83, 12, 50, 0.7)
+}
+.circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:80px;
+  height: 80px;
+  background-color: rgb(142, 25, 83);
+  border-radius: 100%;
+  margin:70px;
+  font-size:30px;
+  color:whitesmoke;
+  box-shadow: 1px 2px 4px 3px rgb(0,0,0,0.5);
+}
