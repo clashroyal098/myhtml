@@ -1,0 +1,17 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.card{
+    font-size:28px;
+    display:inline-block;
+    padding:40px;
+    margin-left:40px;
+    margin-right:20px;
+    margin-top:100px;
+    line-height:83px;
+    box-shadow: 5px 5px 10px 5px rgb(0,0,0,0.5);
+    width:400px;
+    height:400px;
+}

@@ -1,0 +1,73 @@
+.todo-header{
+    background-color: #5F8FC2;
+    width:300px;
+    margin-left: 180px;
+    padding-left:200px;
+    padding-right: 200px;
+    transform: translateX(-50px);
+    color:white;
+}
+.todo-list{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:100px;
+    h1{
+        font-size:40px;
+    }
+    li{
+        width:600px;
+        list-style-type: none;
+        font-size:28px;
+        padding:10px;
+        border-bottom: 2px solid grey;
+    }
+}
+@mixin translate($translate: 250px){
+    transform: translateX($translate);
+    border-radius:10px;
+    border: solid 1px red;
+    color:red;
+}
+@mixin last($translate: 900px){
+    transform: translateX($translate);
+    border-radius:10px;
+    border: solid 1px blue;
+    color:blue;
+}
+.todo-body__button{
+    padding:13px;
+    font-size: 18px;
+    &.first{
+        @include translate;
+    }
+    &.second{
+        @include translate(275px);
+    }
+    &.third{
+        @include translate(95px);
+    }
+    &.last{
+        @include last(40px);
+        }
+}
+.todo-body{
+    input{
+        width:25px;
+        height:25px;
+    }
+}
+
+$input-size:420px;
+$input-h:50px;
+.todo-footer{
+    input{
+        width: $input-size;
+        height: $input-h;
+        transform: translateX(0px);
+    }
+    input::placeholder{
+        font-size:25px;
+    }
+}

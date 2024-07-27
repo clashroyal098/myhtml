@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+#container{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50px;
+    font-family: Arial;
+}
+ul{
+    list-style-type: none;
+    display:flex;
+}
+a{
+    color:black;
+    text-decoration-line: none;
+    padding: 20px;
+    display: inline-block;
+    border:1px black transparent;
+    border-bottom: 1px solid black;
+}
+a.active{
+    border: 1px solid black;
+    border-bottom: solid 1px rgb(255, 255, 255);
+}
+p{
+    margin-top:30px;
+    display:none;
+}
+p.active{
+    display:block;
+}

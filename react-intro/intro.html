@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React-intro</title>
+    <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+    <div id="root"></div>
+<script
+crossorigin
+src="https://unpkg.com/react@17/umd/react.development.js"
+></script>
+<script
+crossorigin
+src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+        ReactDOM.render(
+            <div>
+            <h1>hello react</h1>
+            <Header/>
+            <Body/>
+            </div>
+            , document.getElementById("root")
+        );
+        function Header() {
+            return(
+                <div className="top">
+                    <div class="container">
+                        <img src="Groupreact-logo.png" alt="logo" />
+                        <h2>ReactFacts</h2>
+                        </div>
+                </div>
+            );
+        }
+        function Body(){
+            return(
+                <div className="body">
+                   <div className="main">
+                      <h3>Fun facts about React</h3>
+                      <ul>
+                        <li>Was first released in 2013</li>
+                        <li>Was originally created by Jordan Walke</li>
+                        <li>Has well over 100K stars on GitHub</li>
+                        <li>Is maintained by Meta</li>
+                        <li>Powers thousands of enterprise apps, including mobile apps</li>
+                        </ul>
+                   </div> 
+                </div>
+            )
+        }
+    </script>
+</body>
+</html>

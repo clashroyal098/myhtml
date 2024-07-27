@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+#parent{
+    height:100vh;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12,1fr);
+}
+#parent > .child {
+    border: white solid 1px;
+    padding: 0;
+    text-transform: capitalize;
+    font-size: 20px;
+    background-color: white;
+}
+.child:nth-child(1){
+    grid-area: 1/1/span 3/span 3;
+    border-radius: 8px;
+}
+.child:nth-child(2){
+    grid-area: 4/4/span 3/span 3;
+    border-radius: 8px;
+}
+.child:nth-child(3){
+    grid-area: 7/7/span 3/span 3;
+    border-radius: 8px;
+}
+.child:nth-child(4){
+    grid-area: 10/10/span 3/span 3;
+    border-radius: 8px;
+}
+.child:nth-child(112) ~ .child{
+    display:none;
+}
+#first{
+    background-color: white;
+    border:red solid 3px;
+    width:100%;
+    height:100%;
+    border-radius:8px;
+}
+#second{
+    background-color: white;
+    border:red solid 3px;
+    width:100%;
+    height:100%;
+    border-radius:8px;
+}
+#third{
+    background-color: white;
+    border:red solid 3px;
+    width:100%;
+    height:100%;
+    border-radius:8px;
+}
+#fourth{
+    background-color: white;
+    border:red solid 3px;
+    width:100%;
+    height:100%;
+    border-radius:8px;
+}

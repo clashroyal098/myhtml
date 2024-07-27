@@ -1,0 +1,60 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background: #31006E;
+}
+header{
+  padding: 20px 30px;
+  padding-left:180px;
+  padding-right:160px;
+  border-bottom: solid 1px;
+  border-color: rgb(80, 71, 103);
+}
+#menu{
+list-style-type: none;
+margin-left:100px;
+}
+#menu li{
+display: inline-block;
+padding:10px;
+font-size:20px;
+}
+#menu a{
+text-decoration: none;
+color: purple;
+}
+header nav{
+  float:right;
+}
+section{
+  background: #31006E;
+}
+#text{
+  color:white;
+  margin: 2em;
+  text-transform: capitalize;
+}
+#weare{
+  background: #fff;
+  width:592px;
+  height:250px;
+  padding:32px;
+  margin:10px 40px;
+  text-transform: capitalize;
+  display:inline-block;
+}
+h1{
+  font-family:'Times New Roman', Times, serif;
+  font-size:2rem;
+  padding:5px;
+  margin-left:10px;
+}
+h2{
+  font-size:3rem;
+  padding:20px;
+  padding-left:10px;
+  color: #31006F;
+}

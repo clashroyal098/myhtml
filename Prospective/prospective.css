@@ -1,0 +1,91 @@
+#top-bar{
+    background-color: #082A4A;
+}
+.icon{
+    color:white;
+    font-size:6px;
+    margin-right: 20px;
+}
+.container{
+    padding: 8px;
+}
+.logo{
+    color:white;
+    margin-right:5px;
+}
+.container>a img{
+    width:60px;
+}
+.nav-item{
+    font-size:10px;
+}
+#first{
+    background-color: #082A4A;
+    background-image: url(hero.png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    opacity:1;
+}
+#first p{
+    font-size:12px;
+}
+.second-img img{
+    width:30px; 
+}
+#second .container{
+    transform: translateX(-100px);
+}
+#second .col-4 img{
+    transform: translateX(-10px);
+    height:400px;
+    width:445px;
+}
+#second .col-8 h2{
+    font-weight:700;
+}
+#third{
+    background-color: #EEF2F6;
+}
+#third h6{
+    font-size:20px;
+    margin:8px;
+    margin-bottom: 15px;;
+}
+#third .childs{
+    padding:3px;
+    height:400px;
+    color:white;
+}
+#third .childs > *{
+    height:100%;
+    padding:12px;
+    border-radius: 8px;
+}
+#third #one{
+    background: linear-gradient(to right,  #5c164c 0% ,  #b92a97 100%);
+}
+#two{
+    background: linear-gradient(to right,  #a4246f 0% ,  #c85498 100%);
+}
+#three{
+    background: linear-gradient(to right,  #db183f 0% ,  #ff735e 100%);
+}
+#four{
+    background: linear-gradient(to right,  #ed800d 0% ,  #8a6b23 100%);
+}
+#five{
+    background: linear-gradient(to right,  #3a5b19 0% ,  #94CA5F 100%);
+}
+#six{
+    background: linear-gradient(to right,  #235683 0% ,  #048FA3 100%);
+}
+#seven{
+    background: linear-gradient(to right,  #48B2BC 0% ,  #95D0D3 100%);
+}
+#eight{
+    background: linear-gradient(to right,  #0faba6 0% ,  #64b7b5 100%);
+}
+.childs img{
+    margin-bottom: 10px;
+}

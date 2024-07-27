@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width:80%;
+    margin:0px auto;
+    height:100vh;
+}
+#parent > *{
+    border:red solid 2px;
+    padding:10px;
+    text-transform: capitalize;
+    font-size:20px;
+    border-radius:8px;
+}
+#parent{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr ));
+    grid-template-rows: repeat(3, 50px );
+    gap:10px;
+}

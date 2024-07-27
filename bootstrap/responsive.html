@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap responsive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+            >
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        Offcanvas
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="dropdownId"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Dropdown</a
+                            >
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownId"
+                            >
+                                <a class="dropdown-item" href="#"
+                                    >Action 1</a
+                                >
+                                <a class="dropdown-item" href="#"
+                                    >Action 2</a
+                                >
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                        />
+                        <button class="btn btn-outline-success" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-12">
+                <h3>Our Features</h3>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="bg-white my-3 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#C1E4FF"></circle><path d="M7.83564 28.811V30.7016C7.8253 30.8298 7.84801 30.9585 7.90159 31.0754C7.92877 31.145 7.97768 31.204 8.04105 31.2436C8.10441 31.2832 8.17886 31.3013 8.25334 31.2952C8.32536 31.3037 8.3982 
+                        31.2891 8.4614 31.2535C8.5246 31.218 8.57491 31.1633 8.6051 31.0974C8.64261 30.969 8.65749 30.8351 8.64907 30.7016V28.811H9.44051V30.7016C9.44051 31.2293 9.33059 31.4491 9.13273 31.669C9.01606 31.7805 8.87798 31.8673 8.72683 31.924C8.57568 31.9806 8.4146 32.0061 8.25334 31.9987C7.92263 32.003 7.60188 31.8856 7.35197 31.669C7.08816 31.3832 7.04419 31.1633 7.04419 30.7016V28.811H7.83564Z" fill="black"></path><path d="M12.3203 28.811H13.1118V31.2513H14.0571V31.9548H12.3203V28.811Z" fill="black"></path><path d="M16.8492 29.5145H16.2336V28.811H18.2782V29.5145H17.6626V31.9548H16.8492V29.5145Z" fill="black"></path><path d="M21.0264 28.811H22.0596C22.3971 28.7824 22.7351 28.8592 23.027 29.0309C23.1533 29.1335 23.2531 29.2649 23.3181 29.4141C23.3832 29.5633 23.4115 29.7259 23.4007 29.8883C23.4026 30.0893 23.3494 30.287 23.2468 30.4599C23.1494 30.6056 23.012 30.7201 22.8511 30.7896L23.4886 31.9328H22.6532L21.8398 30.4159H21.9717C22.1377 30.4272 22.3039 30.397 22.4554 30.328C22.5115 30.2786 22.5562 30.2176 22.5866 30.1493C22.6169 30.081 22.6322 30.007 22.6312 29.9322C22.6299 29.8611 22.6135 29.791 22.5832 29.7266C22.5529 29.6622 22.5093 29.6049 22.4554 29.5585C22.357 29.4963 22.2419 29.4656 22.1256 29.4706H21.8398V31.9109H21.0484V28.811H21.0264Z" fill="black"></path><path d="M26.9404 31.9548H26.061L27.2922 28.811H27.9737L29.1828 31.9548H28.3035L28.1496 31.4931H27.0503L26.9404 31.9548ZM27.6219 29.7783L27.2922 30.8775H27.9737L27.6219 29.7783Z" fill="black"></path><path d="M33.7554 31.9548V28.811H34.5688V29.9981H35.5801V28.811H36.3935V31.9548H35.5801V30.7016H34.5688V31.9548H33.7554Z" fill="black"></path><path d="M39.2517 28.811H40.285C40.6367 28.811 41.2743 28.811 41.67 29.4046C41.8669 29.6878 41.9671 30.0271 41.9558 30.3719C41.9558 31.2293 41.5381 31.9548 40.3509 31.9548H39.2517V28.811ZM40.0432 31.2513H40.3949C40.9885 31.2513 41.1644 30.8336 41.1644 30.3939C41.1653 30.193 41.1122 29.9955 41.0105 29.8223C40.9416 29.7252 40.8486 29.6477 40.7407 29.5976C40.6327 29.5475 40.5135 29.5264 40.3949 29.5365H40.0432V31.2513Z" fill="black"></path><path d="M42.8791 16.1919H6.12085V27.47H42.8791V16.1919Z" fill="url(#paint0_linear_5466_75297)"></path><path d="M24.2362 16.9393H6.97827V26.7005H24.2362V16.9393Z" fill="black"></path><path d="M40.4387 22.2156H40.5926C40.7789 22.2145 40.9571 22.14 41.0888 22.0083C41.2205 21.8766 41.295 21.6984 41.2961 21.5121V20.303C41.295 20.1168 41.2205 19.9385 41.0888 19.8068C40.9571 19.6751 40.7789 19.6006 40.5926 19.5995H37.163C37.0703 19.5983 36.9783 19.6157 36.8924 19.6506C36.8065 19.6856 36.7285 19.7373 36.663 19.8029C36.5974 19.8685 36.5456 19.9465 36.5107 20.0324C36.4757 20.1183 36.4583 20.2103 36.4595 20.303V24.3042H37.5368V20.259C37.5393 20.2249 37.554 20.1928 37.5782 20.1686C37.6024 20.1444 37.6345 20.1297 37.6687 20.1271H40.087C40.1211 20.1297 40.1532 20.1444 40.1774 20.1686C40.2016 20.1928 40.2164 20.2249 40.2189 20.259V21.5781C40.2164 21.6122 40.2016 21.6443 40.1774 21.6685C40.1532 21.6928 40.1211 21.7075 40.087 21.71H37.8885L40.3068 24.3042H41.56L39.5594 22.2156H40.4387" fill="black"></path><path d="M29.3585 19.5995V21.5781H27.0282V19.5995H25.9729V24.3042H27.0282V22.2376H29.3585V24.3042H30.3918V19.5995H29.3585Z" fill="black"></path><path d="M33.6458 19.5995H31.2495V24.3042H33.7558C34.7011 24.3042 35.7783 23.7546 35.7783 22.6114V21.2703C35.7783 20.1051 34.6791 19.5995 33.6458 19.5995M34.7231 22.5674C34.7231 23.4248 34.0635 23.7985 33.2501 23.7985H32.3268V20.1051H33.2501C33.9976 20.1051 34.7231 20.4789 34.7231 21.2044V22.5674Z" fill="black"></path><path d="M10.5397 22.1717C10.8474 21.9518 12.4523 20.8746 12.8041 20.6327C13.0019 20.5008 13.1119 20.5228 13.0899 20.6987V22.5894H10.6496C10.3858 22.5674 10.2539 22.3695 10.5397 22.1717M12.6722 19.5995C12.49 19.5824 12.3083 19.6376 12.1665 19.7533C11.507 20.215 9.72623 21.3582 8.29724 22.3695C7.72564 22.7652 7.87953 23.3808 8.75891 23.3808H13.0899V23.9744C13.0899 24.0623 13.1338 24.1283 13.2218 24.1283H14.6508C14.7387 24.1283 14.7827 24.0623 14.7827 23.9744V23.3808H15.5522C15.6401 23.3808 15.6621 23.3588 15.6621 23.2709V22.6773C15.6621 22.5894 15.6401 22.5674 15.5522 22.5674H14.8047V19.7094C14.8047 19.6214 14.7387 19.5775 14.6508 19.5775H12.6722V19.5995ZM16.2776 19.5775C16.2573 19.5769 16.237 19.5804 16.218 19.5879C16.1991 19.5955 16.1819 19.6068 16.1675 19.6212C16.1531 19.6356 16.1417 19.6528 16.1342 19.6718C16.1267 19.6907 16.1231 19.711 16.1238 19.7314V23.9524C16.1231 23.9728 16.1267 23.9931 16.1342 24.012C16.1417 24.031 16.1531 24.0482 16.1675 24.0626C16.1819 24.077 16.1991 24.0883 16.218 24.0958C16.237 24.1033 16.2573 24.1069 16.2776 24.1063H17.6627C17.683 24.1069 17.7033 24.1033 17.7223 24.0958C17.7412 24.0883 17.7584 24.077 17.7728 24.0626C17.7873 24.0482 17.7986 24.031 17.8061 24.012C17.8136 23.9931 17.8172 23.9728 17.8166 23.9524V22.0837C17.8166 22.0837 20.6086 23.8645 20.8285 24.0184C21.0043 24.1283 21.0043 24.1063 21.3341 24.1063H22.939C23.3347 24.1063 23.2687 23.9744 23.0709 23.8645C22.1695 23.3149 20.9164 22.5674 19.3115 21.6001C19.3115 21.6001 21.7518 20.281 22.6971 19.7753C22.961 19.6434 22.895 19.5775 22.6312 19.5775H21.0923C20.9925 19.5698 20.8928 19.5928 20.8065 19.6434C20.5427 19.7973 17.8166 21.2703 17.8166 21.2703V19.7094C17.8172 19.689 17.8136 19.6687 17.8061 19.6498C17.7986 19.6308 17.7873 19.6136 17.7728 19.5992C17.7584 19.5848 17.7412 19.5735 17.7223 19.566C17.7033 19.5584 17.683 19.5549 17.6627 19.5555H16.2776V19.5775Z" fill="url(#paint1_linear_5466_75297)"></path><defs><linearGradient id="paint0_linear_5466_75297" x1="25.0855" y1="19.0992" x2="25.0855" y2="30.119" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE85E"></stop><stop offset="1" stop-color="#EEA616"></stop></linearGradient><linearGradient id="paint1_linear_5466_75297" x1="7.95867" y1="21.8419" x2="23.2292" y2="21.8419" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFF8AC"></stop><stop offset="0.09" stop-color="#FFF8AC"></stop><stop offset="0.13" stop-color="#FFF6A2"></stop><stop offset="0.2" stop-color="#FFF086"></stop><stop offset="0.29" stop-color="#FFE759"></stop><stop offset="0.4" stop-color="#FFDA1C"></stop><stop offset="0.44" stop-color="#FFD400"></stop><stop offset="0.67" stop-color="#FDBB12"></stop><stop offset="0.68" stop-color="#FDB913"></stop>
+                        <stop offset="0.85" stop-color="#CF980B"></stop><stop offset="1" stop-color="#A47904"></stop></linearGradient></defs></svg>
+                    <h6>4kHD</h6>
+                    <p>Features the latest 4K HDR technology and high-speed 4K processing.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="bg-white my-3 ">
+                    <img decoding="async" width="48" height="48" src="https://worldlink.com.np/wp-content/uploads/2023/01/chromecast-1.svg" class="attachment-large size-large wp-image-9784 entered lazyloaded" alt="chromecast 1" data-lazy-src="https://worldlink.com.np/wp-content/uploads/2023/01/chromecast-1.svg" data-ll-status="loaded">
+                    <h6>Chromecast built-in</h6>
+                    <p>Easily cast your favourite movies, music and more to your TV with Chromecast built-in</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="bg-white my-3 ">
+                    <img decoding="async" width="48" height="48" src="https://worldlink.com.np/wp-content/uploads/2023/01/TV-1.svg" class="attachment-large size-large wp-image-9781 entered lazyloaded" alt="TV 1" data-lazy-src="https://worldlink.com.np/wp-content/uploads/2023/01/TV-1.svg" data-ll-status="loaded">
+                    <h6>4kHD</h6>
+                    <p>Enjoy 200 + Live Channels.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="bg-white my-3 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#C1E4FF"></circle><path d="M32.4929 28.3377C35.1563 26.8617 37.1756 25.7372 37.3496 25.6499C37.9062 25.3509 38.4813 24.5602 37.3496 23.946C36.9842 23.7529 35.017 22.6632 32.4929 21.2582L28.9941 24.8241L32.4927 28.3377H32.4929Z" fill="#FFD900"></path><path d="M28.9938 24.8241L17.8528 36.1556C18.1141 36.1906 18.4094 36.1206 18.7576 35.9275C19.4884 35.5239 27.2351 31.2544 32.4928 28.3385L28.9938 24.8241V24.8241Z" fill="#F43249"></path><path d="M28.9941 24.8241L32.4927 21.2755C32.4927 21.2755 19.5415 14.1427 18.7577 13.7219C18.4628 13.5449 18.132 13.4926 17.8359 13.5449L28.9941 24.8239V24.8241Z" fill="#00EE76"></path><path d="M28.994 24.8242L17.8356 13.5452C17.3827 13.6508 17 14.0545 17 14.8799V34.8204C17 35.5763 17.2962 36.1207 17.8528 36.173L28.9938 24.824L28.994 24.8242Z" fill="#00D3FF"></path></svg>
+                    <h6>Google Play</h6>
+                    <p>No matter what you’re looking for, Google Play has it all. Get your movies, TV, books, apps, games all in one place.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="bg-white my-3 ">
+                    <img decoding="async" width="48" height="48" src="https://worldlink.com.np/wp-content/uploads/2023/01/google-assistant-1.svg" class="attachment-large size-large wp-image-9763 entered lazyloaded" alt="google assistant 1" data-lazy-src="https://worldlink.com.np/wp-content/uploads/2023/01/google-assistant-1.svg" data-ll-status="loaded"><h6>Voice Search</h6>
+                    <p>Just say what you want to see with voice search.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="bg-white my-3 ">
+                    <img decoding="async" width="48" height="48" src="https://worldlink.com.np/wp-content/uploads/2023/01/google-play-games.svg" class="attachment-large size-large wp-image-9766 entered lazyloaded" alt="google play games" data-lazy-src="https://worldlink.com.np/wp-content/uploads/2023/01/google-play-games.svg" data-ll-status="loaded">
+                    <h6>Google Play Game</h6>
+                    <p>Games get more fun with Google Play. When you can play the world, anywhere in the world, all from one place, unlimited fun is just a tap away.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
